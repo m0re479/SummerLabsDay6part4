@@ -18,66 +18,83 @@
         android:textStyle="bold"
         android:gravity="center" />
 
-    <Spinner
-        android:id="@+id/spinnerPosition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:entries="@array/positions" />
-
-    <EditText
-        android:id="@+id/editTextId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/id"
-        android:minHeight="48dp"
-        android:inputType="numberDecimal" />
-
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="@string/name"
         android:minHeight="48dp"
         android:inputType="text" />
 
-    <EditText
-        android:id="@+id/editTextSoc_sec"
+    <RadioGroup
+        android:id="@+id/radioGroupBreed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/soc_sec"
-        android:minHeight="48dp"
-        android:inputType="text" />
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonPastoral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pastoral" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDachshund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dachshund" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hound" />
+    </RadioGroup>
 
     <EditText
-        android:id="@+id/editTextSalary"
+        android:id="@+id/editTextAdditionalField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/salary"
-        android:minHeight="48dp"
-        android:inputType="numberDecimal" />
+        android:autofillHints=""
+        android:hint="Some note"
+        android:minHeight="48dp" />
 
-    <LinearLayout
-        android:id="@+id/additional_fields_container"
-        android:layout_width="match_parent"
+    <CheckBox
+        android:id="@+id/checkBoxCollar"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        android:text="@string/collar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMuzzle"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:text="@string/muzzle" />
+
+    <CheckBox
+        android:id="@+id/checkBoxToy"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:text="@string/toy" />
 
     <Button
         android:id="@+id/buttonAdd"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:padding="5dp"
-        android:text="Add new employee" />
+        android:text="Add new dog" />
 
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="match_parent"
-        android:layout_height="404dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:padding="16dp"
         android:paddingTop="16dp"
-        android:textSize="24sp" />
+        android:textSize="18sp"
+        android:scrollbars="vertical" />
 
 </LinearLayout>

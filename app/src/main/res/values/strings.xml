@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">SummerLabsDay6part3</string>
     <string name="title">Dogs</string>
+    <string name="name">Name</string>
+    <string name="pastoral">Пастушья</string>
+    <string name="dachshund">Такса</string>
+    <string name="hound">Гончая</string>
+    <string name="collar">Ошейник</string>
+    <string name="muzzle">Намордник</string>
+    <string name="toy">Игрушка</string>
 </resources>
